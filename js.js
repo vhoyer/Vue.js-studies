@@ -1,6 +1,11 @@
-let app = new Vue({
+let vm = new Vue({
 	el: '#app',
-	app: {
-		message: 'Hello vue!',
+	data: {
+		msg: 'wtf',
+	},
+	watch: {
+		msg: function(n,o){
+			console.log('yup, that happens before the return ... impressive');
+		},
 	},
 });
