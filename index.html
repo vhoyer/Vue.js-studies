@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+	<head id='head'>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>{{ myAweTitle }}</title>
 	</head>
 	<body>
 		<main id="app">
-			<span>
-				{{ msg }}
-			</span>
+			{{ msg }}<br />
+			<br />
+			then we reverse it by a method like reverse(msg):<br />
+			{{ reverse(msg) }}<br />
+			<br />
+			then we reverse it by using a computed property like reversedMsg:<br />
+			{{ reversedMsg }}<br />
+			<br />
+			then we se that both work like a charm.
 		</main>
 
+		<script src="https://cdn.jsdelivr.net/gh/vhoyer/jQ@1.0.0/jQ.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 		<script src="js.js"></script>
 	</body>
