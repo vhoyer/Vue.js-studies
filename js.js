@@ -14,7 +14,7 @@ let vm = new Vue({
 	computed: {
 		nowC: function(){
 			setInterval(()=>{this.nowD=Date.now();this.nowDK=Date.now()},1000);
-			return Date.now();
+			return 'aww';
 		},
 	},
 });
