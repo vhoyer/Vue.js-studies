@@ -8,7 +8,7 @@
 		<main id="app">
 			<ol>
 				<button @click="swap">Click me</button>
-				<li v-for="item in list">
+				<li v-for="item in list" :key="item.id">
 					{{ item.id }}. wololo: {{ item.display }}<br />
 					<input type="text" placeholder="hehe" />
 				</li>
