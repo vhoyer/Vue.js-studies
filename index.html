@@ -6,15 +6,13 @@
 	</head>
 	<body>
 		<main id="app">
-			{{ nowD }}<br />
-			<br />
-			{{ nowC }}<br />
-
-<br /><br />
-
-			<keep-alive>
-				{{ nowDK }}<br />
-			</keep-alive>
+			<ol>
+				<button @click="swap">Click me</button>
+				<li v-for="item in list">
+					{{ item.id }}. wololo: {{ item.display }}<br />
+					<input type="text" placeholder="hehe" />
+				</li>
+			</ol>
 		</main>
 
 		<script src="https://cdn.jsdelivr.net/gh/vhoyer/jQ@1.0.0/jQ.js"></script>
